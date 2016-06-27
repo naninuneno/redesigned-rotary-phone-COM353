@@ -1,0 +1,60 @@
+body {
+  padding: 15px 15px 15px 15px;
+  color: #333333;
+  font-family: ‘Lucida Sans Unicode’, sans-serif;
+}
+
+.block {
+  padding: 10px 10px 10px 10px;
+  background-color: #c0c6c1;
+}
+
+.block-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.block-links a, a#home-link, a#contact {
+  background-color: #f44336;
+  color: white;
+  padding: 14px 25px;
+  text-align: center; 
+  text-decoration: none;
+  display: inline-block;
+}
+
+.block-links a:hover {
+  background-color: red;
+}
+
+table td, table th {
+  padding: 5px 5px 5px 5px;
+}
+
+form#contact-form {
+  padding: 10px 10px 10px 10px;
+  background-color: #c0c6c1;
+}
+
+form input, form textarea {
+  width: 15%;
+}
+
+form textarea {
+  height: 100px;
+}
+
+form input#submit {
+  width: 100px;
+}
+
+img#photo {
+  height: 400px;
+  width: 320px;
+}
+
+#overview {
+}
+
+#log {
+}
