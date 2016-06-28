@@ -18,9 +18,10 @@
 <ul>
 <li>Creating a basic HTML document</li>
 <li>Best practice for separating HTML, CSS and JS</li>
+<li>Comments can be used in HTML to write notes to describe the markup without rendering it on the page - used like so: <em>&lt;!-- comment goes here --&gt;</em></li>
+<li>The <em>id</em> and <em>class</em> attributes can be used in conjunction with CSS and Javascript to create a pretty page with dynamic elements</li>
 </ul>
 
-<br/>
 <br/>
 
 <b><u><p>Deprecated &lt;table&gt; attributes</u></b>
@@ -78,33 +79,45 @@
 </table>
 
 <br/>
-<br/>
 
-<p>Terminology learned:</p>
+<b><u><p>Terminology learned:</p></u></b>
 <dl>
   <b><dt>HTML</dt></b>
-  <dd>HyperText Markup Language - The set of markup symbols or codes placed in a file intended for display on a Web browser page.
-  </dd>
+  <dd>HyperText Markup Language - The set of markup symbols or codes placed in a file intended for display on a Web browser page</dd>
+  <b><dt>XHTML</dt></b>
+  <dd>eXtensible HyperText Markup Language - uses the elements and attributes of HTML with the syntax of XML</dd>
   <b><dt>DHTML</dt></b>
   <dd>Dynamic HTML is a term for the combination of technologies which can be used to make interactive websites, governing structure (HTML), presentation (CSS) and behaviour (Javascript and the DOM)</dd>
-  <b><dt>Lists</dt></b>
+  <b><dt>HTML5</dt></b>
+  <dd>The newest version of HTML/XHTML - supported by modern browsers & intended to be backwards compatible. Adds new elements and new functionality e.g. native video & audio</dd>
+  <b><dt>Document Type Definition (DTD)</dt></b>
+  <dd>A doctype statement - identifies the version of HTML contained in your document - placed at the top of a web page document file e.g. <em><!DOCTYPE html></em> for HTML5</dd>
+  <b><dt>HTML Head Section</dt></b>
+  <dd>Contains information that describes the Web page document</dd>
+  <b><dt>HTML Body Section</dt></b>
+  <dd>Contains text and elements that display in the Web page document</dd>
+  <b><dt>HTML Lists</dt></b>
   <dd>3 types of lists in HTML - ordered (numbered), unordered (bulleted) and definition (terms and their definitions) - lists can also be nested</dd>
-  <b><dt>Tables</dt></b>
-  <dd>Tables can be made up of thead, tbody & tfoot tags, which hold tr (table row), th table heading) and td (table data) tags</dd>
-  <b><dt>HTML Comments</dt></b>
-  <dd>Comments can be used in HTML to write notes to describe the markup without rendering it on the page - used like so: <em>&lt;!-- comment goes here --&gt;</em></dd>
-  <b><dt>Attributes</dt></b>
-  <dd>The <em>id</em> and <em>class</em> attributes can be used in conjunction with CSS and Javascript to create a pretty page with dynamic elements</dd>
+  <b><dt>HTML Tables</dt></b>
+  <dd>Tables can be made up of thead, tbody & tfoot tags, which hold tr (table row), th (table heading) and td (table data) tags</dd>
   <b><dt>GET</dt></b>
-  <dd></dd>
+  <dd>The GET request method requests data from a specified resource. They should never be used when dealing with sensitive data</dd>
   <b><dt>POST</dt></b>
-  <dd></dd>
+  <dd>The POST request method submits data to be processed to a specified resource. It requests that a web server accepts and stores the data enclosed in the body of the request message. It is often used when uploading a file or submitting a completed web form</dd>
   <b><dt>DOM</dt></b>
-  <dd>The Document Object Model</dd>
+  <dd>The Document Object Model (DOM) is a programming interface for HTML and XML documents. It provides a structured representation of the document and it defines a way that the structure can be accessed from programs so that they can change the document structure, style and content</dd>
 </dl>
 
+<br>
+
+<b><u><p>Prediction tool</p></u></b>
+<a id="prediction-tool" href="prediction.html">Prediction Tool</a>
+
 </div>
 </div>
 
+<br>
+<button id="css-toggle">Toggle CSS</button>
+<script type="text/javascript" src="script.js"></script>
 </body>
 </html>

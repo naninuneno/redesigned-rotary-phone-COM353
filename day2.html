@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Learning Log Site - Day 2 - B00652112</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<a id="home-link" href="index.html">Home</a>
+
+<h1>Learning Log</h1>
+
+<div id="overview">
+<h3>Day 2</h3>
+<div id="log">
+<p>On day 2, we introduction to and covered CSS. We extended this learning log site to look nicer, using cascading style sheets (CSS).</p>
+<p>Some of the things we covered:</p>
+<ul>
+<li>Creating an external stylesheet file to style our page</li>
+<li>Normalize.css - a downloadable stylesheet that makes browsers render all elements more consistently and in line with modern standards. It precisely targets only the styles that need normalising</li>
+<li>Validating your CSS - this actually proved useful as it warned that my font-family CSS should be surrounded in quotes if it contains whitespace - this was confusing because it DID have quotes - upon further inspection these were actually the Mac 'smart quotes' - which weren't recognised as normal. It flagged something useful to me that I had missed and required closer inspection. We used https://jigsaw.w3.org/css-validator/ for validation: <br>
+<img id="css-proof" src="css_validation_proof.png" alt="Css Validation Proof"></li>
+<li>An additional way to add CSS to the website - the <em>@import</em> statement. It allows specifying the <em>media queries</em> that the style is dependent on e.g. orientation:landscape will only load the specific CSS file if the screen orientation is landscape. This allows user agents to avoid retrieving resources for media types that are unsupported by the device</li>
+</ul>
+
+<br>
+
+<b><u><p>Terminology learned:</p></u></b>
+<dl>
+  <b><dt>CSS</dt></b>
+  <dd>Cascading Style Sheets</dd>
+
+</div>
+</div>
+
+<br>
+<button id="css-toggle">Toggle CSS</button>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

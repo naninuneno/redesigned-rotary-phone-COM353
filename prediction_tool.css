@@ -1,0 +1,7 @@
+body {
+  background-color: #ffffcc;
+}
+
+#prediction-img, #prediction-tool {
+  text-align: center;
+}
