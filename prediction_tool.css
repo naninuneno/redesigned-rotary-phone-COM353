@@ -5,3 +5,7 @@ body {
 #prediction-img, #prediction-tool {
   text-align: center;
 }
+
+form input#submit {
+  width: 150px;
+}

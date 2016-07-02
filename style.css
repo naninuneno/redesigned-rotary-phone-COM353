@@ -5,9 +5,19 @@ body {
   font-family: 'Verdana', sans-serif;
 }
 
+#page {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
 .block {
   padding: 10px 10px 10px 10px;
   background-color: #c0c6c1;
+  border-radius: 10px;
+}
+
+.block-title {
+  text-align: center;
 }
 
 .block-links {
@@ -22,14 +32,48 @@ body {
   text-align: center; 
   text-decoration: none;
   display: inline-block;
+  border-radius: 5px;
 }
 
 .block-links a:hover, a#home-link:hover, a#contact:hover, a#prediction-tool:hover {
   background-color: red;
 }
 
+.log-section {
+  padding: 10px 10px 10px 10px;
+  background-color: #e4e7e4;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.log-section.alternate {
+  background-color: #d7dbd7;
+}
+
+.left-right-wrapper {
+  height: 100%;
+}
+
+.section-left {
+  width: 49%;
+  display: inline-block;
+  float: left;
+}
+
+.section-right {
+  height: 100%;
+  width: 49%;
+  display: inline-block;
+  float: left;
+}
+
 table td, table th {
   padding: 5px 5px 5px 5px;
+}
+
+.left-right-wrapper.form {
+  height: 309px;
+  background-color: #c0c6c1;
 }
 
 form {
@@ -38,7 +82,7 @@ form {
 }
 
 form input, form textarea {
-  width: 15%;
+  width: 100%;
 }
 
 form textarea {
@@ -50,19 +94,13 @@ form input#submit {
 }
 
 img#photo {
-  height: 400px;
-  width: 320px;
+  width: 50%;
+  max-height: 100%;
+  float: right;
 }
 
 img#css-proof {
   padding-top: 10px;
   padding-bottom: 10px;
-  height: 250px;
-  width: 1000px;
-}
-
-#overview {
-}
-
-#log {
+  width: 95%;
 }

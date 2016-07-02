@@ -5,13 +5,20 @@
 <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+<div id="page">
+
 <a id="home-link" href="index.html">Home</a>
+
 <h1>Contact Me</h1>
-<div id="contact">
-<p>Email: <a href="mailto:nobody@nobody.com">notmyemail@gmail.com</a></p>
+
+<div class="log-section">
+<p>Email: <a href="mailto:nobody@nobody.com">someemail@gmail.com</a></p>
 <p>Telephone: <a href="callto:07712457890">07712457890</a></p>
 <hr/>
 <h2>Message Me</h2>
+
+<div class="left-right-wrapper form">
+<div class="section-left">
 <form id="contact-form">
   Name:<br/>
   <input type="text" name="name"><br/><br/>
@@ -21,12 +28,18 @@
   <textarea name="message"></textarea><br/><br/>
   <input id="submit" type="submit" value="Submit">
 </form>
+</div> <!-- section-left -->
+
+<div class="section-right">
+	<img id="photo" src="contact_me.jpg" alt="My Picture">
+</div> <!-- section-right -->
 </div>
-<br/>
-<img id="photo" src="contact_me.jpg" alt="My Picture">
+</div>
 
 <br>
 <button id="css-toggle">Toggle CSS</button>
+
+</div> <!-- .page -->
 <script type="text/javascript" src="script.js"></script>
 </body>
 </html>

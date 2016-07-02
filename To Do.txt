@@ -1,1 +1,3 @@
 Use normalize.css
+
+dis bih wants prediction tool as day 1 (sans CSS), day 2 (sans JS) and day 3 as separate pages
