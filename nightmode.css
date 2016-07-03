@@ -1,0 +1,28 @@
+body {
+  color: #FFFFFF;
+  background-color: #040404;
+}
+
+a {
+  color: cyan;
+}
+
+.block {
+  background-color: #3F3F3F;
+}
+
+.log-section {
+  background-color: #404040;
+}
+
+.log-section.alternate {
+  background-color: #262626;
+}
+
+.left-right-wrapper.form {
+  background-color: #6E6E6E;
+}
+
+form {
+  background-color: #6E6E6E;
+}
