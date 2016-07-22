@@ -6,6 +6,10 @@ body {
   text-align: center;
 }
 
+#prediction-form input {
+	width: 24%;
+}
+
 form input#submit {
-  width: 150px;
+  width: 215px;
 }

@@ -14,18 +14,26 @@ body {
   padding: 10px 10px 10px 10px;
   background-color: #c0c6c1;
   border-radius: 10px;
-}
-
-.block-title {
   text-align: center;
 }
 
-.block-links {
-  display: flex;
-  justify-content: space-between;
+.prediction-section {
+  text-align: center;
 }
 
-.block-links a, a#home-link, a#contact, a#prediction-tool {
+.block-link, .prediction-link {
+  display: inline-block;
+}
+
+.block-link.left, .prediction-link.left {
+  float: left;
+}
+
+.block-link.right, .prediction-link.right {
+  float: right;
+}
+
+.block-link a, a#home-link, a#contact, a#prediction-tool {
   background-color: #f44336;
   color: white;
   padding: 14px 25px;
@@ -35,7 +43,7 @@ body {
   border-radius: 5px;
 }
 
-.block-links a:hover, a#home-link:hover, a#contact:hover, a#prediction-tool:hover {
+.block-link a:hover, a#home-link:hover, a#contact:hover, a#prediction-tool:hover {
   background-color: red;
 }
 
@@ -69,6 +77,10 @@ body {
   width: 49%;
   display: inline-block;
   float: left;
+}
+
+dt {
+  font-weight: bold;
 }
 
 table td, table th {
@@ -120,7 +132,7 @@ img#css-proof {
 }
 
 .js-function {
-  color: orange;
+  color: #e65c00;
   font-style: italic;
   font-weight: bold;
 }

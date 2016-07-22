@@ -26,3 +26,11 @@ a {
 form {
   background-color: #6E6E6E;
 }
+
+.js-comment {
+	color: #00cc00;
+}
+
+.js-function {
+  color: orange;
+}
