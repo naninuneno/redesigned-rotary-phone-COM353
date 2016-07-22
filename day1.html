@@ -15,111 +15,142 @@
 <div id="overview">
 <h3>Day 1</h3>
 <div class="log-section">
-<p>On day 1, we got an introduction to the module and covered HTML. We created this learning log site as a creative way to show our daily logs.</p>
-<p>Some of the things we covered:</p>
-<ul>
-<li>Creating a basic HTML document</li>
-<li>Best practice for separating HTML, CSS and JS</li>
-<li>Comments can be used in HTML to write notes to describe the markup without rendering it on the page - used like so: <em>&lt;!-- comment goes here --&gt;</em></li>
-<li>The <em>id</em> and <em>class</em> attributes can be used in conjunction with CSS and Javascript to create a pretty page with dynamic elements</li>
-</ul>
+  <p>On day 1, we got an introduction to the module and covered HTML. We created this learning log site as a creative way to show our daily logs.</p>
+  <p>Some of the things we covered:</p>
+  <ul>
+    <li>Creating a basic HTML document</li>
+    <li>Best practice for separating HTML, CSS and JS</li>
+    <li>Comments can be used in HTML to write notes to describe the markup without rendering it on the page - used like so: <em>&lt;!-- comment goes here --&gt;</em></li>
+    <li>The <em>id</em> and <em>class</em> attributes can be used in conjunction with CSS and Javascript to create a pretty page with dynamic elements</li>
+    <li>The HTML Head section contains information that describes the Web page document</li>
+    <li>The HTML Body section contains text and elements that display in the Web page document</li>  
+    <li>3 types of lists in HTML - ordered (numbered), unordered (bulleted) and definition (terms and their definitions) - lists can also be nested</li>
+    <li>HTML Tables can be made up of thead, tbody &amp; tfoot tags, which hold tr (table row), th (table heading) and td (table data) tags</li>
+  </ul>
 </div>
 
 <br/>
 
 <div class="log-section alternate">
-<b><u><p>Deprecated &lt;table&gt; attributes</u></b>
-<table border="1">
-<tr>
-  <th>Attribute</th>
-  <th>Description</th> 
-  <th>Why is it deprecated?</th>
-</tr>
-<tr>
-  <td>align</td>
-  <td>Indicates how the table must be aligned in regard of the containing document</td> 
-  <td>The &lt;table&gt; element should be styled using CSS instead</td>
-</tr>
-<tr>
-  <td>bgcolor</td>
-  <td>Defines the background colour of the table and its content</td> 
-  <td>The &lt;table&gt; element should be styled using CSS instead</td>
-</tr>
-<tr>
-  <td>border</td>
-  <td>Defines, in pixels, the size of the frame surrounding the table (this table uses it!)</td> 
-  <td>The &lt;table&gt; element should be styled using CSS instead</td>
-</tr>
-<tr>
-  <td>cellpadding</td>
-  <td>Defines the space between the content of a cell and the border of the cell</td> 
-  <td>The &lt;table&gt; element should be styled using CSS instead</td>
-</tr>
-<tr>
-  <td>cellspacing</td>
-  <td>Defines the size, in percentage or pixels, of the space between two cells - horizontally and vertically</td> 
-  <td>The &lt;table&gt; element should be styled using CSS instead</td>
-</tr>
-<tr>
-  <td>frame</td>
-  <td>Defines which side of the frame surrounding the table must be displayed</td> 
-  <td>The &lt;table&gt; element should be styled using CSS instead</td>
-</tr>
-<tr>
-  <td>rules</td>
-  <td>Defines where rules, i.e. lines, should appear in a table</td> 
-  <td>The &lt;table&gt; element should be styled using CSS instead</td>
-</tr>
-<tr>
-  <td>summary</td>
-  <td>Defines an alternative text use to describe the table in user-agents unable to display it. Allows visually impaired people to get the information from it also</td> 
-  <td>Can be replace by a &lt;caption&gt; or &lt;details&gt; element, or the table adjusted so that such description is no longer needed (e.g. using &lt;th&gt; and &lt;thead&gt; elements</td>
-</tr>
-<tr>
-  <td>width</td>
-  <td>Defines the width of the table</td> 
-  <td>The &lt;table&gt; element should be styled using CSS instead</td>
-</tr>
-</table>
+  <b><u><p>Deprecated &lt;table&gt; attributes</u></b>
+  <table border="1">
+  <tr>
+    <th>Attribute</th>
+    <th>Description</th> 
+    <th>Why is it deprecated?</th>
+  </tr>
+  <tr>
+    <td>align</td>
+    <td>Indicates how the table must be aligned in regard of the containing document</td> 
+    <td>The &lt;table&gt; element should be styled using CSS instead</td>
+  </tr>
+  <tr>
+    <td>bgcolor</td>
+    <td>Defines the background colour of the table and its content</td> 
+    <td>The &lt;table&gt; element should be styled using CSS instead</td>
+  </tr>
+  <tr>
+    <td>border</td>
+    <td>Defines, in pixels, the size of the frame surrounding the table (this table uses it!)</td> 
+    <td>The &lt;table&gt; element should be styled using CSS instead</td>
+  </tr>
+  <tr>
+    <td>cellpadding</td>
+    <td>Defines the space between the content of a cell and the border of the cell</td> 
+    <td>The &lt;table&gt; element should be styled using CSS instead</td>
+  </tr>
+  <tr>
+    <td>cellspacing</td>
+    <td>Defines the size, in percentage or pixels, of the space between two cells - horizontally and vertically</td> 
+    <td>The &lt;table&gt; element should be styled using CSS instead</td>
+  </tr>
+  <tr>
+    <td>frame</td>
+    <td>Defines which side of the frame surrounding the table must be displayed</td> 
+    <td>The &lt;table&gt; element should be styled using CSS instead</td>
+  </tr>
+  <tr>
+    <td>rules</td>
+    <td>Defines where rules, i.e. lines, should appear in a table</td> 
+    <td>The &lt;table&gt; element should be styled using CSS instead</td>
+  </tr>
+  <tr>
+    <td>summary</td>
+    <td>Defines an alternative text use to describe the table in user-agents unable to display it. Allows visually impaired people to get the information from it also</td> 
+    <td>Can be replace by a &lt;caption&gt; or &lt;details&gt; element, or the table adjusted so that such description is no longer needed (e.g. using &lt;th&gt; and &lt;thead&gt; elements</td>
+  </tr>
+  <tr>
+    <td>width</td>
+    <td>Defines the width of the table</td> 
+    <td>The &lt;table&gt; element should be styled using CSS instead</td>
+  </tr>
+  </table>
 </div>
 
 <br/>
 
 <div class="log-section">
-<b><u><p>Terminology learned:</p></u></b>
-<dl>
-  <b><dt>HTML</dt></b>
-  <dd>HyperText Markup Language - The set of markup symbols or codes placed in a file intended for display on a Web browser page</dd>
-  <b><dt>XHTML</dt></b>
-  <dd>eXtensible HyperText Markup Language - uses the elements and attributes of HTML with the syntax of XML</dd>
-  <b><dt>DHTML</dt></b>
-  <dd>Dynamic HTML is a term for the combination of technologies which can be used to make interactive websites, governing structure (HTML), presentation (CSS) and behaviour (Javascript and the DOM)</dd>
-  <b><dt>HTML5</dt></b>
-  <dd>The newest version of HTML/XHTML - supported by modern browsers & intended to be backwards compatible. Adds new elements and new functionality e.g. native video & audio</dd>
-  <b><dt>Document Type Definition (DTD)</dt></b>
-  <dd>A doctype statement - identifies the version of HTML contained in your document - placed at the top of a web page document file e.g. <em><!DOCTYPE html></em> for HTML5</dd>
-  <b><dt>HTML Head Section</dt></b>
-  <dd>Contains information that describes the Web page document</dd>
-  <b><dt>HTML Body Section</dt></b>
-  <dd>Contains text and elements that display in the Web page document</dd>
-  <b><dt>HTML Lists</dt></b>
-  <dd>3 types of lists in HTML - ordered (numbered), unordered (bulleted) and definition (terms and their definitions) - lists can also be nested</dd>
-  <b><dt>HTML Tables</dt></b>
-  <dd>Tables can be made up of thead, tbody & tfoot tags, which hold tr (table row), th (table heading) and td (table data) tags</dd>
-  <b><dt>GET</dt></b>
-  <dd>The GET request method requests data from a specified resource. They should never be used when dealing with sensitive data</dd>
-  <b><dt>POST</dt></b>
-  <dd>The POST request method submits data to be processed to a specified resource. It requests that a web server accepts and stores the data enclosed in the body of the request message. It is often used when uploading a file or submitting a completed web form</dd>
-  <b><dt>DOM</dt></b>
-  <dd>The Document Object Model (DOM) is a programming interface for HTML and XML documents. It provides a structured representation of the document and it defines a way that the structure can be accessed from programs so that they can change the document structure, style and content</dd>
-</dl>
+  <b><u><p>Additional resources:</p></u></b>
+  <p>An additional resource which gives some interesting context to what we've learned is <a href="http://www.internetsociety.org/internet/what-internet/history-internet/brief-history-internet">a brief history of the Internet.</a> It's good to know the origins behind the Internet given that it's firmly ingrained in our day-to-day life now</p>
+</div>
+
+<br/>
+
+<div class="log-section alternate">
+  <b><u><p>Terminology learned:</p></u></b>
+  <dl>
+    <b><dt>HTML</dt></b>
+    <dd>HyperText Markup Language - The set of markup symbols or codes placed in a file intended for display on a Web browser page</dd>
+    <b><dt>XHTML</dt></b>
+    <dd>eXtensible HyperText Markup Language - uses the elements and attributes of HTML with the syntax of XML</dd>
+    <b><dt>DHTML</dt></b>
+    <dd>Dynamic HTML is a term for the combination of technologies which can be used to make interactive websites, governing structure (HTML), presentation (CSS) and behaviour (Javascript and the DOM)</dd>
+    <b><dt>HTML5</dt></b>
+    <dd>The newest version of HTML/XHTML - supported by modern browsers &amp; intended to be backwards compatible. Adds new elements and new functionality e.g. native video &amp; audio</dd>
+    <b><dt>Document Type Definition (DTD)</dt></b>
+    <dd>A doctype statement - identifies the version of HTML contained in your document - placed at the top of a web page document file e.g. <em><!DOCTYPE html></em> for HTML5</dd>
+    <b><dt>World Wide Web</dt></b>
+    <dd>The graphical user interface to information stored on computers connected to the Internet</dd>
+    <b><dt>The Internet Society</dt></b>
+    <dd>A professional organization that provides leadership in addressing issues related to the future of the Internet</dd>
+    <b><dt>IETF</dt></b>
+    <dd>Internet Engineering Task Force - a large open international community of network designers, operators, vendors, and researchers concerned with the evolution of the Internet architecture and the smooth operation of the Internet</dd>
+    <b><dt>RFC</dt></b>
+    <dd>Requests for Comments - Memos in the RFC document series contain technical and organizational notes about the Internet. They cover many aspects of computer networking, including protocols, procedures, programs, and concepts, as well as meeting notes, opinions, and sometimes humor</dd>
+    <b><dt>IAB</dt></b>
+    <dd>Internet Architecture Board - provides long-range technical direction for Internet development, ensuring the Internet continues to grow and evolve as a platform for global communication and innovation</dd>
+    <b><dt>ICANN</dt></b>
+    <dd>The Internet Corporation for Assigned Numbers &amp; Names - a non-profit organization whose main function is to coordinate the assignment of Internet domain names, IP address numbers, protocol parameters &amp; protocol port numbers</dd>
+    <b><dt>Intranet</dt></b>
+    <dd>A private network contained within an organization or business used to share information and resources among coworkers</dd>
+    <b><dt>Extranet</dt></b>
+    <dd>A private network that securely shares part of an organization's information or operations with external partners</dd>
+    <b><dt>W3C</dt></b>
+    <dd>World Wide Web Consortium - Develops recommendations and prototype technologies related to the Web. Also produces specifications, called <em>Recommendations</em>, in an effort to standardize web technologies</dd>
+    <b><dt>Universal Design</dt></b>
+    <dd>The design of products and environments to be usable by all people, to the greatest extent possible, without the need for adaptation or specialized design</dd>
+    <b><dt>Network</dt></b>
+    <dd>Two or more computers connected together for the purpose of communicating and sharing resources</dd>
+    <b><dt>LAN</dt></b>
+    <dd>Local Area Network - Usually confined to a single building or group of buildings</dd>
+    <b><dt>WAN</dt></b>
+    <dd>Wide Area Network - Usually uses some form of public or commercial communications network to connect computers in widely dispersed geographical areas</dd>
+    <b><dt>Protocols</dt></b>
+    <dd>Rules that describe the methods used for clients and servers to communicate with each other over a network</dd>
+    <b><dt>GET</dt></b>
+    <dd>The GET request method requests data from a specified resource. They should never be used when dealing with sensitive data</dd>
+    <b><dt>POST</dt></b>
+    <dd>The POST request method submits data to be processed to a specified resource. It requests that a web server accepts and stores the data enclosed in the body of the request message. It is often used when uploading a file or submitting a completed web form</dd>
+    <b><dt>DOM</dt></b>
+    <dd>The Document Object Model (DOM) is a programming interface for HTML and XML documents. It provides a structured representation of the document and it defines a way that the structure can be accessed from programs so that they can change the document structure, style and content</dd>
+  </dl>
 </div>
 
 <br>
 
-<div class="log-section alternate">
-<b><u><p>Prediction tool</p></u></b>
-<a id="prediction-tool" href="prediction.html">Prediction Tool</a>
+<div class="log-section">
+  <b><u><p>Prediction tool</p></u></b>
+  <a id="prediction-tool" href="prediction.html">Prediction Tool</a>
 </div>
 
 </div>

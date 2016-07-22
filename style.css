@@ -50,6 +50,10 @@ body {
   background-color: #d7dbd7;
 }
 
+.log-section.scroll {
+  overflow-x: scroll;
+}
+
 .left-right-wrapper {
   height: 100%;
 }
@@ -69,6 +73,10 @@ body {
 
 table td, table th {
   padding: 5px 5px 5px 5px;
+}
+
+ol {
+  margin-bottom: 0px;
 }
 
 .left-right-wrapper.form {
@@ -103,4 +111,16 @@ img#css-proof {
   padding-top: 10px;
   padding-bottom: 10px;
   width: 95%;
+}
+
+.js-comment {
+  color: green;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.js-function {
+  color: orange;
+  font-style: italic;
+  font-weight: bold;
 }
