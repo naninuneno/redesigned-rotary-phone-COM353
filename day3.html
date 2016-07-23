@@ -1,69 +1,72 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Learning Log Site - Day 3 - B00652112</title>
-<link rel="stylesheet" type="text/css" href="style.css">
-<link rel="stylesheet" type="text/css" href="normalize.css">
-<link id="nightmode-style" rel="stylesheet" type="text/css" href="nightmode.css" disabled>
-</head>
-<body>
-<div id="page">
-
-<a id="home-link" href="index.html">Home</a>
-
-<h1>Learning Log</h1>
-
-<div id="overview">
-	<h3>Day 3</h3>
-	<div class="log-section">
-	<p>On day 3, we were introduced to Javascript. We extended our prediction tool to be functional using this knowledge.</p>
-	<p>Some of the things we covered:</p>
-	<ul>
-	<li>Creating a javascript file to give our site function</li>
-	</ul>
-</div>
-
-<br>
-
-<div class="log-section alternate">
-  <b><u><p>Additional resources:</p></u></b>
-  <p><a href="https://www.sitepoint.com/top-javascript-frameworks-libraries-tools-use/">This list of top Javascript frameworks</a> gives the best JS frameworks to help development by supplying bundled code that performs often-needed actions right out of the box. It also gives an explanation of when best to use each framework so you can easily pick out what's suitable for your project</p>
-</div>
-
-<br/>
-
-<div class="log-section">
-	<b><u><p>Terminology learned:</p></u></b>
-	<dl>
-	  <dt>Javascript</dt>
-	  <dd>JavaScript is a high-level, dynamic, untyped, and interpreted programming language used to make web pages interactive</dd>
-	  <dt>WAI</dt>
-	  <dd>W3C's Web Accessibility Initiative - develops guidelines widely regarded as the international standard for Web accessibility</dd>
-	  <dt>Web Accessibility</dt>
-	  <dd>The practice of making content that can be used by as many people, regardless of hardware, software, language, culture, location or mental or physical ability, as possible</dd>
-	  <dt>WCAG 2.0</dt>
-	  <dd>Web Content Accessibility Guidelines (WCAG) 2.0 covers a wide range of recommendations for making Web content more accessible with an aim to make content accessible to a wider range of people with disabilities, including blindness and low vision, deafness and hearing loss, learning disabilities, cognitive limitations, limited movement, speech disabilities, photosensitivity and combinations of these</dd>
-	  <dt>Variables</dt>
-	  <dd>Used to hold data of type numeric, string, boolean etc.</dd>
-	  <dt>Event handlers</dt>
-	  <dd>Commands that allow user-controlled events like clicks and mouse movement to be accomplished</dd>
-	  <dt>Functions</dt>
-	  <dd>Groups related statements together (blocks of code) and allows them to be called when needed (invoked)
-	  </dd>
-	  <dt>Arrays</dt>
-	  <dd>Used to store a group of data all under one variable
-	  </dd>
-	</dl>
-</div>
-
-<br/>
-
-<!-- set this section to have x-scroll on overflow so that JS formatting is preserved -->
-<div class="log-section alternate scroll">
-	<b><u><p>JS Explanation:</p></u></b>
-
-	<!-- <pre> tag used to keep formatting as seen in the file -->
-	<pre>
+  <head>
+    <title>Learning Log Site - Day 3 - B00652112</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <!-- nightmode CSS, disabled by default -->
+    <link id="nightmode-style" rel="stylesheet" type="text/css" href="nightmode.css" disabled>
+  </head>
+  <body>
+    <div id="page">
+      <a id="home-link" href="index.html">Home</a>
+      <h1>Learning Log</h1>
+      <div id="overview">
+        <h3>Day 3</h3>
+        <div class="log-section">
+          <p>On day 3, we were introduced to Javascript. We extended our prediction tool to be functional using this knowledge.</p>
+          <p>Some of the things we covered:</p>
+          <ul>
+            <li>Creating a javascript file to give our site function</li>
+          </ul>
+        </div>
+        <br>
+        <div class="log-section alternate">
+          <b>
+            <u>
+              <p>Additional resources:</p>
+            </u>
+          </b>
+          <p><a href="https://www.sitepoint.com/top-javascript-frameworks-libraries-tools-use/">This list of top Javascript frameworks</a> gives the best JS frameworks to help development by supplying bundled code that performs often-needed actions right out of the box. It also gives an explanation of when best to use each framework so you can easily pick out what's suitable for your project</p>
+        </div>
+        <br>
+        <div class="log-section">
+          <b>
+            <u>
+              <p>Terminology learned:</p>
+            </u>
+          </b>
+          <dl>
+            <dt>Javascript</dt>
+            <dd>JavaScript is a high-level, dynamic, untyped, and interpreted programming language used to make web pages interactive</dd>
+            <dt>WAI</dt>
+            <dd>W3C's Web Accessibility Initiative - develops guidelines widely regarded as the international standard for Web accessibility</dd>
+            <dt>Web Accessibility</dt>
+            <dd>The practice of making content that can be used by as many people, regardless of hardware, software, language, culture, location or mental or physical ability, as possible</dd>
+            <dt>WCAG 2.0</dt>
+            <dd>Web Content Accessibility Guidelines (WCAG) 2.0 covers a wide range of recommendations for making Web content more accessible with an aim to make content accessible to a wider range of people with disabilities, including blindness and low vision, deafness and hearing loss, learning disabilities, cognitive limitations, limited movement, speech disabilities, photosensitivity and combinations of these</dd>
+            <dt>Variables</dt>
+            <dd>Used to hold data of type numeric, string, boolean etc.</dd>
+            <dt>Event handlers</dt>
+            <dd>Commands that allow user-controlled events like clicks and mouse movement to be accomplished</dd>
+            <dt>Functions</dt>
+            <dd>Groups related statements together (blocks of code) and allows them to be called when needed (invoked)
+            </dd>
+            <dt>Arrays</dt>
+            <dd>Used to store a group of data all under one variable
+            </dd>
+          </dl>
+        </div>
+        <br>
+        <!-- set this section to have x-scroll on overflow so that JS formatting is preserved -->
+        <div class="log-section alternate scroll">
+          <b>
+            <u>
+              <p>JS Explanation:</p>
+            </u>
+          </b>
+          <!-- <pre> tag used to keep formatting as seen in the file -->
+          <pre>
 <span class="js-comment">
 /* return a random number between 0 and a passed in number (default 4 if none passed in) - 
    used to get the random choice for each section in the MASH game */</span>
@@ -162,16 +165,13 @@
 var form = document.querySelector('#mash'); 
 // When the form is submitted, call the function handle_submission  
 form.addEventListener('submit', handle_submission);
-	</pre>
-</div>
-
-</div>
-
-<br>
-<button id="css-toggle">Toggle CSS</button>
-<button id="nightmode-toggle">Toggle Nightmode</button>
-
-</div> <!-- .page -->
-<script type="text/javascript" src="script.js"></script>
-</body>
+          </pre>
+        </div>
+      </div>
+      <br>
+      <button id="css-toggle">Toggle CSS</button>
+      <button id="nightmode-toggle">Toggle Nightmode</button>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
 </html>

@@ -1,98 +1,97 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Learning Log Site - Day 2 - B00652112</title>
-<link rel="stylesheet" type="text/css" href="style.css">
-<link rel="stylesheet" type="text/css" href="normalize.css">
-<link id="nightmode-style" rel="stylesheet" type="text/css" href="nightmode.css" disabled>
-</head>
-<body>
-<div id="page">
-
-<a id="home-link" href="index.html">Home</a>
-
-<h1>Learning Log</h1>
-
-<div id="overview">
-<h3>Day 2</h3>
-<div class="log-section">
-	<p>On day 2, we introduction to and covered CSS. We extended this learning log site to look nicer, using cascading style sheets (CSS).</p>
-	<p>Some of the things we covered:</p>
-	<ul>
-	<li>Creating an external stylesheet file to style our page</li>
-	<li>Normalize.css - a downloadable stylesheet that makes browsers render all elements more consistently and in line with modern standards. It precisely targets only the styles that need normalising</li>
-	<li>Validating your CSS - this actually proved useful as it warned that my font-family CSS should be surrounded in quotes if it contains whitespace - this was confusing because it DID have quotes - upon further inspection these were actually the Mac 'smart quotes' - which weren't recognised as normal. It flagged something useful to me that I had missed and required closer inspection. We used https://jigsaw.w3.org/css-validator/ for validation: <br>
-	<img id="css-proof" src="css_validation_proof.png" alt="Css Validation Proof"></li>
-	<li>An additional way to add CSS to the website - the <em>@import</em> statement. It allows specifying the <em>media queries</em> that the style is dependent on e.g. orientation:landscape will only load the specific CSS file if the screen orientation is landscape. This allows user agents to avoid retrieving resources for media types that are unsupported by the device</li>
-	</ul>
-</div>
-
-<br>
-
-<div class="log-section alternate">
-  <b><u><p>Additional resources:</p></u></b>
-  <p><a href="http://www.csszengarden.com/">CSS Zen Garden</a> is a demonstration of what can be accomplished through CSS-based design. With a library of designs, this is a good place to get some inspiration for your design</p>
-  <p><a href="http://www.awwwards.com/what-are-frameworks-22-best-responsive-css-frameworks-for-web-design.html">This list of 22 responsive CSS frameworks</a> is a good introduction to what frameworks are, and how they can help speed up development by providing a common structure so that developers don’t have to redo it from scratch and can reuse the code provided</p>
-</div>
-
-<br/>
-
-<div class="log-section">
-	<b><u><p>Terminology learned:</p></u></b>
-	<dl>
-	  <dt>CSS</dt>
-	  <dd>Cascading Style Sheets (CSS) is a stylesheet language that describes the presentation of web pages. It allows for standardisation of the styling code across browsers and separates the content and the presentation. Use of external style sheets also allows for easy code sharing</dd>
-	  <dt>Inline Styles</dt>
-	  <dd>CSS that is directly applied to the HTML elements</dd>
-	  <dt>Internal Styles</dt>
-	  <dd>CSS that is embedded in the Head element of the HTML</dd>
-	  <dt>External Stylesheets</dt>
-	  <dd>CSS that is stored in its own separate file, and linked to from the Head element of the HTML - considered the best way to add styling as the styles can be separated from the structure and can be used across multiple pages with the same file</dd>
-	  <dt>Specified value</dt>
-	  <dd>
-	  	The specified value of a CSS property is set in one out of three ways:
-	  	<ol>
-		<li>
-			If the document's stylesheet has specified a value for the property then it will be used. For example; if the color property is set to green then the text color of the corresponding element will be green
-		</li>
-		<li>
-			If the document's stylesheet has not specified a value then it will be inherited form the parent element (if possible). For example; if we have a paragraph (&lt;p&gt;) inside a &lt;div&gt; and the &lt;div&gt; has a CSS font property value of "Arial" and the &lt;p&gt; doesn't have a font property defined then it will inherit the Arial font
-		</li>
-		<li>
-			If none of the above are available, the initial value for the element as specified by the CSS specification is applied
-		</li>
-		</ol>
-	  </dd>
-	  <dt>Computed value</dt>
-	  <dd>
-	  	The computation needed to reach the computed value for the CSS property typically involves converting relative values (such as those in em units or percentages) to absolute values.
-	  	<br>
-		For example, if an element has specified values font-size: 16px and padding-top: 2em, then the computed value of padding-top is 32px (double the font size)
-	  </dd>
-	  <dt>Used value</dt>
-	  <dd>The used value of any CSS property is the final value of that property after all calculations have been performed</dd>
-	  <dt>Actual value</dt>
-	  <dd>The actual value of a CSS property is the used value after all approximations have been applied. For example, a user agent may only be able to render borders with a integer pixel value and may be forced to approximate the computed width of the border</dd>
-	  <dt>Box model</dt>
-	  <dd>
-	  	In a document, each element is represented as a rectangular box. Determining the size, properties — like its color, background, borders aspect — and the position of these boxes is the goal of the rendering engine.
-
-		In CSS, each of these rectangular boxes is described using the standard box model. This model describes the content of the space taken by an element. Each box has four edges: the margin edge, border edge, padding edge, and content edge (in that order from the outside in)
-	  </dd>
-	  <dt>BOM</dt>
-	  <dd>The BOM is the Browser Object Model, which deals with browser components aside from the document, like history, location, navigator and screen (as well as some others that vary by browser). We are using the BOM whenever we open a new window or whenever we create an alert or create a prompt or whenever we alter the status bar message, etc. Those objects belong to the browser</dd>
-	  <dt>DOM</dt>
-	  <dd>The DOM is the Document Object Model, which deals with the document, the HTML elements themselves, e.g. document and all traversal you would do in it, events, etc.</dd>
-	</dl>
-</div>
-
-</div>
-
-<br>
-<button id="css-toggle">Toggle CSS</button>
-<button id="nightmode-toggle">Toggle Nightmode</button>
-
-</div> <!-- .page -->
-<script type="text/javascript" src="script.js"></script>
-</body>
+	<head>
+		<title>Learning Log Site - Day 2 - B00652112</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="normalize.css">
+		<!-- nightmode CSS, disabled by default -->
+		<link id="nightmode-style" rel="stylesheet" type="text/css" href="nightmode.css" disabled>
+	</head>
+	<body>
+		<div id="page">
+			<a id="home-link" href="index.html">Home</a>
+			<h1>Learning Log</h1>
+			<div id="overview">
+				<h3>Day 2</h3>
+				<div class="log-section">
+					<p>On day 2, we introduction to and covered CSS. We extended this learning log site to look nicer, using cascading style sheets (CSS).</p>
+					<p>Some of the things we covered:</p>
+					<ul>
+						<li>Creating an external stylesheet file to style our page</li>
+						<li>Normalize.css - a downloadable stylesheet that makes browsers render all elements more consistently and in line with modern standards. It precisely targets only the styles that need normalising</li>
+						<li>Validating your CSS - this actually proved useful as it warned that my font-family CSS should be surrounded in quotes if it contains whitespace - this was confusing because it DID have quotes - upon further inspection these were actually the Mac 'smart quotes' - which weren't recognised as normal. It flagged something useful to me that I had missed and required closer inspection. We used https://jigsaw.w3.org/css-validator/ for validation: <br>
+							<img id="css-proof" src="css_validation_proof.png" alt="Css Validation Proof">
+						</li>
+						<li>An additional way to add CSS to the website - the <em>@import</em> statement. It allows specifying the <em>media queries</em> that the style is dependent on e.g. orientation:landscape will only load the specific CSS file if the screen orientation is landscape. This allows user agents to avoid retrieving resources for media types that are unsupported by the device</li>
+					</ul>
+				</div>
+				<br>
+				<div class="log-section alternate">
+					<b>
+						<u>
+							<p>Additional resources:</p>
+						</u>
+					</b>
+					<p><a href="http://www.csszengarden.com/">CSS Zen Garden</a> is a demonstration of what can be accomplished through CSS-based design. With a library of designs, this is a good place to get some inspiration for your design</p>
+					<p><a href="http://www.awwwards.com/what-are-frameworks-22-best-responsive-css-frameworks-for-web-design.html">This list of 22 responsive CSS frameworks</a> is a good introduction to what frameworks are, and how they can help speed up development by providing a common structure so that developers don’t have to redo it from scratch and can reuse the code provided</p>
+				</div>
+				<br>
+				<div class="log-section">
+					<b>
+						<u>
+							<p>Terminology learned:</p>
+						</u>
+					</b>
+					<dl>
+						<dt>CSS</dt>
+						<dd>Cascading Style Sheets (CSS) is a stylesheet language that describes the presentation of web pages. It allows for standardisation of the styling code across browsers and separates the content and the presentation. Use of external style sheets also allows for easy code sharing</dd>
+						<dt>Inline Styles</dt>
+						<dd>CSS that is directly applied to the HTML elements</dd>
+						<dt>Internal Styles</dt>
+						<dd>CSS that is embedded in the Head element of the HTML</dd>
+						<dt>External Stylesheets</dt>
+						<dd>CSS that is stored in its own separate file, and linked to from the Head element of the HTML - considered the best way to add styling as the styles can be separated from the structure and can be used across multiple pages with the same file</dd>
+						<dt>Specified value</dt>
+						<dd>
+							The specified value of a CSS property is set in one out of three ways:
+							<ol>
+								<li>
+									If the document's stylesheet has specified a value for the property then it will be used. For example; if the color property is set to green then the text color of the corresponding element will be green
+								</li>
+								<li>
+									If the document's stylesheet has not specified a value then it will be inherited form the parent element (if possible). For example; if we have a paragraph (&lt;p&gt;) inside a &lt;div&gt; and the &lt;div&gt; has a CSS font property value of "Arial" and the &lt;p&gt; doesn't have a font property defined then it will inherit the Arial font
+								</li>
+								<li>
+									If none of the above are available, the initial value for the element as specified by the CSS specification is applied
+								</li>
+							</ol>
+						</dd>
+						<dt>Computed value</dt>
+						<dd>
+							The computation needed to reach the computed value for the CSS property typically involves converting relative values (such as those in em units or percentages) to absolute values.
+							<br>
+							For example, if an element has specified values font-size: 16px and padding-top: 2em, then the computed value of padding-top is 32px (double the font size)
+						</dd>
+						<dt>Used value</dt>
+						<dd>The used value of any CSS property is the final value of that property after all calculations have been performed</dd>
+						<dt>Actual value</dt>
+						<dd>The actual value of a CSS property is the used value after all approximations have been applied. For example, a user agent may only be able to render borders with a integer pixel value and may be forced to approximate the computed width of the border</dd>
+						<dt>Box model</dt>
+						<dd>
+							In a document, each element is represented as a rectangular box. Determining the size, properties — like its color, background, borders aspect — and the position of these boxes is the goal of the rendering engine.
+							In CSS, each of these rectangular boxes is described using the standard box model. This model describes the content of the space taken by an element. Each box has four edges: the margin edge, border edge, padding edge, and content edge (in that order from the outside in)
+						</dd>
+						<dt>BOM</dt>
+						<dd>The BOM is the Browser Object Model, which deals with browser components aside from the document, like history, location, navigator and screen (as well as some others that vary by browser). We are using the BOM whenever we open a new window or whenever we create an alert or create a prompt or whenever we alter the status bar message, etc. Those objects belong to the browser</dd>
+						<dt>DOM</dt>
+						<dd>The DOM is the Document Object Model, which deals with the document, the HTML elements themselves, e.g. document and all traversal you would do in it, events, etc.</dd>
+					</dl>
+				</div>
+			</div>
+			<br>
+			<button id="css-toggle">Toggle CSS</button>
+			<button id="nightmode-toggle">Toggle Nightmode</button>
+		</div>
+		<script type="text/javascript" src="script.js"></script>
+	</body>
 </html>
