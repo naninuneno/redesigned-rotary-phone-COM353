@@ -1,3 +1,5 @@
+/* ~~ Master styling used for all pages ~~ */
+
 body {
   padding: 15px 15px 15px 15px;
   color: #333333;
@@ -33,6 +35,7 @@ body {
   float: right;
 }
 
+/* To style the defined links as red buttons */
 .block-link a, a#home-link, a#contact, a#prediction-tool {
   background-color: #f44336;
   color: white;
@@ -125,12 +128,14 @@ img#css-proof {
   width: 95%;
 }
 
+/* To handle explanation of the JS code for the MASH tool */
 .js-comment {
   color: green;
   font-weight: bold;
   font-size: 1.2em;
 }
 
+/* To make the JS functions stand out a bit more for readability */
 .js-function {
   color: #e65c00;
   font-style: italic;
