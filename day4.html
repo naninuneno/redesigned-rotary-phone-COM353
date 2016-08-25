@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Learning Log Site - Day 4 - B00652112</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="normalize.css">
+		<!-- nightmode CSS, disabled by default -->
+		<link id="nightmode-style" rel="stylesheet" type="text/css" href="nightmode.css" disabled>
+	</head>
+	<body>
+		<div id="page">
+			<a id="home-link" href="index.html">Home</a>
+			<h1>Learning Log</h1>
+			<div id="overview">
+				<h3>Day 4</h3>
+				<!-- alternating log sections coloured slightly different to distinguish from eachother -->
+				<div class="log-section">
+					<p>On day 4, we continued with the basics of Javascript. We added some basic Javascript around conditionals, arrays, and looping in short practical exercises on our learning log.</p>
+					<p>Some of the things we covered:</p>
+					<ul>
+						<li>Basic Javascript statements and their outcomes</li>
+						<li>Arrays</li>
+						<li>Functions and external stylesheets</li>
+						<li>Loops - for, while, and do-while - and looping through arrays</li>
+						<li>Conditionals - if, if-else and switch statements</li>
+					</ul>
+				</div>
+				<br>
+				<div class="log-section alternate">
+					<b>
+						<u>
+							<p>Additional resources:</p>
+						</u>
+					</b>
+					<p><a href="http://marijnhaverbeke.nl/js-cheatsheet.html">This Javascript cheatsheet</a> is a good way of quickly checking syntax when something has slipped your mind</p>
+				</div>
+				<br>
+				<div class="log-section">
+					<b>
+						<u>
+							<p>Terminology learned:</p>
+						</u>
+					</b>
+					<dl>
+						<dt>Looping Statement</dt>
+						<dd>Used to perform tasks repeatedly</dd>
+						<dt>Loop Control</dt>
+						<dd>Specified what condition is necessary for the continued execution of the loop</dd>
+						<dt>Loop Body</dt>
+						<dd>Statements that will be repeatedly executed as long as the loop control condition is satisfied</dd>
+						<dt>For loop</dt>
+						<dd>A loop that uses a counter, a test condition and a way to update the counter. Useful for when the value of the current iteration is important / you know how many iterations are required beforehand e.g. looping through an array so you know to stop when the counter reaches the array's length</dd>
+						<dt>While loop</dt>
+						<dd>A loop that only uses a test condition, which relies on the loop body being able to eventually satisfy the condition so that the loop is terminated. Useful for when the number of iterations is not known beforehand</dd>
+						<dt>Do... While loop</dt>
+						<dd>A loop that works similar to a while loop, except the looping condition is checked after the loop instead of before, so it behaves just like a while loop except it will always run at least once (before the condition is tested at the end of the loop)</dd>
+						<dt>Associative Array</dt>
+						<dd>Uses a string as an index e.g. Course["ICT"] = "Information Communication Technology";</dd>
+					</dl>
+				</div>
+				<br>
+				<div class="log-section alternate">
+					<b>
+						<u>
+							<p>Practical 7:</p>
+						</u>
+					</b>
+					<p>1. Explaining Javascript statements:</p>
+					<ul>
+						<li><pre><code>var myAge = 45;</code></pre>
+						<p>Declaring a variable 'myAge' and assigning it a value of 45. myAge's value == 45<p></li>
+						<li><pre><code>myAge += 4;</code></pre>
+						<p>Adding 4 to myAge - shorthand for 'myAge = myAge + 4'. myAge's value == 49<p></li>
+						<li><pre><code>myAge++;</code></pre>
+						<p>Increment myAge by 1 - shorthand for 'myAge = myAge + 1'. myAge's value == 50<p></li>
+						<li><pre><code>myAge == 40 + 10;</code></pre>
+						<p>Boolean expression, an equality check for myAge comparing it to 50. Evaluates to true<p></li>
+						<li><pre><code>myAge <= 38;</code></pre>
+						<p>Boolean expression, checking that myAge is equal to or less than 38. Evaluates to false<p></li>
+						<li><pre><code>myAge = 40;</code></pre>
+						<p>Assigning myAge a value of 40<p></li>
+					</ul>
+					<hr>
+					<p>2. Internal Script:</p>
+					<a href="day4script.html">Internal script for exercise 2</a>
+					<hr>
+					<p>3. Internal Script:</p>
+					<a href="day4script.html">Internal script for exercise 3</a>
+					<hr>
+					<p>4. Error Checking:</p>
+					<pre>
+<span class="html-error">&lt;!DOCTYPE html></span>
+&lt;html>
+  &lt;head>
+    &lt;title>Find the Erro<span class="html-error">r</span>s&lt;/title>
+  &lt;/head>
+  &lt;body>
+    &lt;script>
+      document<span class="html-error">.</span>write("Hello:");
+      document.write(" Can you find all the errors? &lt;br />");
+      /* multi line comment
+      Can be used <span class="html-error">*</span>/
+      document.write("By now you should have 3 &lt;br />")<span class="html-error">;</span>
+      doc<span class="html-error">ument</span>.write(" What a lovely day");
+    &lt;/script>
+  <span class="html-error">&lt;/body></span>
+&lt;/html>
+					</pre>
+					<hr>
+					<p>5. Arrays:<p>
+					<a href="day4script.html">Internal script for exercise 5</a>
+					<hr>
+					<p>6. Functions and External JS Files:<p>
+					<form id="7ex6-form">
+						Enter name: <input type="text">
+						<select>
+							<option disabled selected hidden>Uni</option>
+							<option>Queen's University</option>	
+							<option>Ulster University</option>	
+						</select>
+						<select>
+							<option disabled selected hidden>Campus</option>
+							<option>Belfast</option>	
+							<option>Coleraine</option>
+							<option>Jordanstown</option>
+							<option>Magee</option>
+						</select>
+						<select>
+							<option disabled selected hidden>Course</option>
+							<option>Software Engineering</option>	
+							<option>Computer Science</option>
+							<option>Interactive Multimedia Design</option>
+							<option>Information Communication Technology</option>
+						</select>
+						<input type="submit">
+					</form>
+					<p id="7ex6-output"></p>
+				</div>
+				<br>
+				<div class="log-section">
+					<b>
+						<u>
+							<p>Practical 8:</p>
+						</u>
+					</b>
+					<p>1. Looping:</p>
+					<form id="8ex1-form">
+						Count up to: <input type="text">
+						<br><br>
+						<input type="submit" value="Start Counting">
+					</form>
+					<p id="8ex1-output"></p>
+					<hr>
+					<p>2. Looping through array:</p>
+					<button id="8ex2-btn">Go</button>
+					<p id="8ex2-output"></p>
+					<hr>
+					<p>3. Conditional branch statements:</p>
+					<ul>
+					<li>1. See practical 7 exercise 6</li>
+					<li>2. Checking grades:
+						<br><br>
+						<form id="8ex3-form">
+						Mark 1: <input type="text">
+						<span id="mark1-validation" class="form-validation"></span><br>
+						Mark 2: <input type="text">
+						<span id="mark2-validation" class="form-validation"></span><br>
+						Mark 3: <input type="text">
+						<span id="mark3-validation" class="form-validation"></span><br>
+						Mark 4: <input type="text">
+						<span id="mark4-validation" class="form-validation"></span><br>
+						<br>
+						<input type="submit" value="Calculate Average">
+						<p id="8ex3-output"></p>
+					</form>
+					</li>
+					</ul>
+				</div>
+			</div>
+			<br>
+			<button id="css-toggle">Toggle CSS</button>
+			<button id="nightmode-toggle">Toggle Nightmode</button>
+		</div>
+		<script type="text/javascript" src="script.js"></script>
+		<script type="text/javascript" src="day4script.js"></script>
+	</body>
+</html>

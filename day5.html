@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Learning Log Site - Day 5 - B00652112</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="normalize.css">
+		<!-- nightmode CSS, disabled by default -->
+		<link id="nightmode-style" rel="stylesheet" type="text/css" href="nightmode.css" disabled>
+	</head>
+	<body>
+		<div id="page">
+			<a id="home-link" href="index.html">Home</a>
+			<h1>Learning Log</h1>
+			<div id="overview">
+				<h3>Day 5</h3>
+				<!-- alternating log sections coloured slightly different to distinguish from eachother -->
+				<div class="log-section">
+					<p>On day 5, we learned about responsive web design and more advanced Javascript. We also did the class test</p>
+					<p>Some of the things we covered:</p>
+					<ul>
+						<li>Creating a simple rollover</li>
+						<li>Creating a navigation page with multiple rollover images</li>
+						<li>Creating captioned slide shows controlled by navigation buttons</li>
+						<li>Creating animated banner advertisements and linking them to external webpages</li>
+					</ul>
+				</div>
+				<br>
+				<div class="log-section alternate">
+					<b>
+						<u>
+							<p>Additional resources:</p>
+						</u>
+					</b>
+					<p><a href="http://htmldog.com/guides/javascript/advanced/">This advanced tutorial</a> is a good introduction to more advanced Javascript, covering OO, local storage, closures and some popular JS frameworks</p>
+				</div>
+				<br>
+				<div class="log-section">
+					<b>
+						<u>
+							<p>Terminology learned (not much):</p>
+						</u>
+					</b>
+					<dl>
+						<dt>Cookies</dt>
+						<dd>Small pieces of information stored on the visitor's hard drive</dd>
+					</dl>
+				</div>
+				<br>
+				<div class="log-section alternate">
+					<b>
+						<u>
+							<p>Practical 9:</p>
+						</u>
+					</b>
+					<p>1. Car Insurance Web Page:</p>
+					<form id="9ex1-form">
+						Forename: <input type="text">
+						<span id="fname-validation" class="form-validation"></span><br>
+						Surname: <input type="text">
+						<span id="sname-validation" class="form-validation"></span><br>
+						Age: <input type="text">
+						<span id="age-validation" class="form-validation"></span><br>
+						Marital Status:
+						<input type="radio" name="marital-status" value="married"> Married<br>
+  						<input type="radio" name="marital-status" value="single"> Single<br>
+						<span id="married-validation" class="form-validation"></span><br>
+						<input type="submit" value="Calculate Insurance Class">
+					</form>
+					<p id="9ex1-output"></p>
+					<hr>
+					<p>3. More Form Validation:</p>
+					<h2>User Survey</h2>
+					<hr>
+					<b>User Information:</b>
+					<p>Please enter your details below:</p>
+					<form id="9ex3-form" name="userSurvey">
+						Name: (Required) <input type="text" name="userName">
+						<span id="name-validation" class="form-validation"></span><br>
+						E-mail: (Required) <input type="text" name="email">
+						<span id="email-validation" class="form-validation"></span><br>
+						Phone: (Required) <input type="text" name="phone">
+						<span id="phone-validation" class="form-validation"></span><br>
+						<hr>
+						Please choose your favourite types of books (check all that apply):
+						<input type="checkbox" name="bookChoice0" value="Science Fiction"> Science Fiction
+  						<input type="checkbox" name="bookChoice1" value="Travel Guide"> Travel Guide
+  						<input type="checkbox" name="bookChoice2" value="Short Story Collection"> Short Story Collection
+  						<input type="checkbox" name="bookChoice3" value="Other"> Other<br>
+						<span id="book-validation" class="form-validation"></span><br>
+						<textarea form="9ex3-form" rows="4" cols="50" name="textarea"></textarea>
+						<input type="submit" value="Submit">
+						<button type="button">Reset Form</button>
+					</form>
+					<p id="9ex3-output"></p>
+					<hr>
+					<p>3.3. Explanation of phone formatting code</p>
+					<pre>
+<span class="js-function">function validNo()</span> {
+  <span class="js-comment">/* if phone has no value, alert for validation, focus on field and return false (not a valid no.) */</span>
+  <span class="js-struct">if (!document.userSurvey.phone.value)</span> {
+    window.alert("Phone number missing. Please enter a valid phone number to continue.");
+    document.userSurvey.phone.focus();
+    return false;
+  } <span class="js-struct">else</span> {
+    var numbersOnly = "";
+    var chars = "";
+    var phoneNo = document.userSurvey.phone.value;
+    <span class="js-comment">/* go through each character in number to evaluate it */</span>
+    <span class="js-struct">for (i = 0; i < phoneNo.length; i++)</span> {
+      <span class="js-comment">/* get next character in number */</span>
+      chars = phoneNo.substring(i, i+1);
+
+      <span class="js-comment">/* if character is valid number (between 1 & 9), add to numbersOnly string */</span>
+      <span class="js-struct">if (chars >= "0" && chars <= "9")</span> {
+        numbersOnly = numbersOnly + chars;
+      }
+    }
+    <span class="js-comment">/* if there are fewer/more than 13, alert for validation and focus on field, return false */</span>
+    <span class="js-struct">if (numbersOnly.length != 13)</span> {
+      window.alert("Incorrect phone number format.You must enter 13 numbers.");
+      document.userSurvey.focus();
+      return false;
+    } <span class="js-struct">else</span> {
+      <span class="js-comment">/* for valid number, break up into the correct segments */</span>
+      var areacode = numbersOnly.substring(0,2);
+      var leading0 = numbersOnly.substring(2,3);
+      var exchange = numbersOnly.substring(3,5);
+      var ext1 = numbersOnly.substring(5,9);
+      var ext2 = numbersOnly.substring(9);
+      <span class="js-comment">/* use sections of phone number to create new format */</span>
+      var newNumber =( "+" + areacode + " " +"(" + leading0 + ")" + exchange + " " +
+      ext1 + "-" + ext2);
+      <span class="js-comment">/* replace number with correctly formatted number and return true (valid no.) */</span>
+      document.userSurvey.phone.value = newNumber;
+      return true;
+    }
+  }
+}
+					</pre>
+					<hr>
+					<p>3.5. Explanation of email validation code</p>
+					<pre>
+<span class="js-function">function validEmail()</span> {
+  <span class="js-comment">/* if email has no value, alert with validation message and focus on field */</span>
+  <span class="js-struct">if (!document.userSurvey.eMail.value)</span> {
+    window.alert("E-mail Address missing. Please enter a valid E-mail address to continue.");
+    document.userSurvey.eMail.focus();
+    return false;
+  } <span class="js-struct">else</span> {
+    var emailAddress = document.userSurvey.eMail.value;
+    var atLoc = emailAddress.indexOf("@", 1);
+    var dotLoc = emailAddress.indexOf(".", atLoc+2);
+    var len = emailAddress.length;
+    <span class="js-comment">/* validate that there is an '@' symbol in the email address, isn't at position 0 (there is some text before it), that there is a '.', and that there is text at least 2 long after the '.' - typical email address format */</span>
+    <span class="js-struct">if (atLoc > 0 && dotLoc > 0 && len > dotLoc+2)</span> {
+      return true;
+    <span class="js-comment">/* otherwise alert for invalid email address and focus on field */</span>
+    } <span class="js-struct">else</span> {
+      alert("Invalid E-mail address! Please enter your e-mail address again.");
+      document.userSurvey.eMail.focus();
+      return false;
+    }
+  }
+}
+					</pre>
+				</div>
+			</div>
+			<br>
+			<button id="css-toggle">Toggle CSS</button>
+			<button id="nightmode-toggle">Toggle Nightmode</button>
+		</div>
+		<script type="text/javascript" src="script.js"></script>
+		<script type="text/javascript" src="day5script.js"></script>
+	</body>
+</html>

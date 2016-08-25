@@ -1,5 +1,4 @@
-// set nightmode on page load based on if session storage
-// has value for it
+// set nightmode on page load based on if local storage has value for it
 initializeNightmode();
 
 var cssOn = true;
@@ -21,13 +20,15 @@ function toggleCss() {
 
 function initializeNightmode() {
     var nightmodeOn = localStorage.getItem('nightmode');
+    var nightmodeEl = document.getElementById('nightmode-style');
 
-    if (nightmodeOn != null) {
-        document.getElementById('nightmode-style').removeAttribute('disabled');
+    if (nightmodeOn != null && nightmodeEl != null) {
+        nightmodeEl.removeAttribute('disabled');
     }
 }
 
 function toggleNightmode() {
+    // use local storage to store the value of nightmode so it persists across pages
     var nightmodeOn = localStorage.getItem('nightmode');
 
     if (nightmodeOn == null) {

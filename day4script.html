@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Learning Log Site - B00652112</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<div id="page">
+			<script>
+				document.write("<b><u>Exercise 2:</b></u> <br><br>")
+				var myAge = 45;
+				writeAnswer("My age is " + myAge);
+				myAge += 4;
+				writeStatement("myAge += 4");
+				writeAnswer("My age is " + myAge);
+				myAge++;
+				writeStatement("myAge++");
+				writeAnswer("My age is " + myAge);
+				var expr = myAge == 40 + 10;
+				writeStatement("myAge == 40 + 10");
+				writeAnswer("Evaluates as " + expr);
+				expr = myAge <= 38;
+				writeStatement("myAge <= 38");
+				writeAnswer("Evaluates as " + expr);
+				myAge = 40;
+				writeStatement("myAge = 40");
+				writeAnswer("My age is " + myAge);
+
+				// to reduce duplication of formatting for writing to document
+				function write(text) {
+					document.write(text + "<br>");
+				}
+				function writeAnswer(answer) {
+					write("<b>" + answer + "</b>");
+				}
+				function writeStatement(statement) {
+					write("<em>" + statement + "</em>");
+				}
+			</script>
+			<br><br><hr><br>
+			<script>
+				document.write("<b><u>Exercise 3:</b></u> <br><br>")
+				var myTextContainer = "A web browser";
+				myTextContainer += " will follow your instructions ";
+				myTextContainer += " exactly and without an argument";
+				document.write(myTextContainer);
+			</script>
+			<br><br><hr><br>
+			<script>
+				document.write("<b><u>Exercise 5:</b></u> <br><br>")
+				var unis = [ "Queen's University", "Ulster University" ];
+				var campuses = [ "Belfast",  "Coleraine", "Jordanstown", "Magee" ];
+				var courses = [ "Software Engineering", "Computer Science", "Interactive Multimedia Design", "Information Communication Technology" ];
+				var text = "I'm a third year " + courses[0] + " student in " + unis[1] + " at " + campuses[2];
+				document.write(text);
+			</script>
+		</div>
+	</body>
+</html>

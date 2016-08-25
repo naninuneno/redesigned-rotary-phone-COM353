@@ -141,3 +141,32 @@ img#css-proof {
   font-style: italic;
   font-weight: bold;
 }
+
+/* To make JS structures stand out more */
+.js-struct {
+   color: #0066ff;
+}
+
+/* To make the HTML errors stand out a bit more for readability */
+.html-error {
+  color: red;
+  font-weight: bold;
+}
+
+#message-form {
+  width: 25%;
+}
+
+.form-validation {
+  color: red;
+  font-style: italic;
+}
+
+#slideshow {
+  text-align: center;
+}
+
+#slideshow-img {
+  height: 200px;
+  width: 50%;
+}

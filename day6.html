@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Learning Log Site - Day 6 - B00652112</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="normalize.css">
+		<!-- nightmode CSS, disabled by default -->
+		<link id="nightmode-style" rel="stylesheet" type="text/css" href="nightmode.css" disabled>
+	</head>
+	<body>
+		<div id="page">
+			<a id="home-link" href="index.html">Home</a>
+			<h1>Learning Log</h1>
+			<div id="overview">
+				<h3>Day 6</h3>
+				<!-- alternating log sections coloured slightly different to distinguish from eachother -->
+				<div class="log-section">
+					<p>On day 6, we finished our work for the other days and did groupwork. By now, we had already finished up with the course content, so nothing new was covered.</p>
+					<p>This page (and most of the others on the learning log) should be responsive.</p>
+				</div>
+				<br>
+				<div class="log-section alternate">
+					<b>
+						<u>
+							<p>Practical 12:</p>
+						</u>
+					</b>
+					<p>1. Online Quiz:</p>
+					<h2>Online Quiz on XHTML</h2>
+					<form name="12ex1-form">
+						<p><b>Question 1: What does XHTML stand for?</b></p>
+						<select name="12ex1-q1">
+							<option value="placeholder" selected disabled>Select your answer</option>
+							<option value="1">EXtreme HyperText Markup Language</option>
+							<option value="2">EXtensible HyperText Marking Language</option>
+							<option value="3">EXtensible HyperText Markup Language</option>
+							<option value="4">EXtra Hyperlinks and Text Markup Language</option>
+						</select>
+						<p><b>Question 2: What is the correct HTML for a paragraph?</b></p>
+						<select name="12ex1-q2">
+							<option value="placeholder" selected disabled>Select your answer</option>
+							<option value="1">&lt;/p>&lt;p></option>
+							<option value="2">&lt;p>&lt;/p></option>
+							<option value="3">&lt;P>&lt;/p></option>
+							<option value="4">&lt;P>&lt;/P></option>
+						</select>
+						<p><b>Question 3: What is correct HTML for a line break?</b></p>
+						<select name="12ex1-q3">
+							<option value="placeholder" selected disabled>Select your answer</option>
+							<option value="1">&lt;break/></option>
+							<option value="2">&lt;br /></option>
+							<option value="3">&lt;br></option>
+						</select>
+						<hr>
+						<input type="submit" value="Check Answers">
+					</form>
+					<br>
+					<span>Your score is: </span>
+					<span id="12ex1-output"></span><br>
+					<hr>
+					<p>2. Image Rollover:</p>
+					<a href="day6ImageRollover.html">Click Here</a>
+					<hr>
+					<p>3. Slideshow:</p>
+					<div id="slideshow">
+						<h3>Relevant pictures</h3>
+						<img src="images/cool-kid-1.jpg" name="slideframe" id="slideshow-img">
+						<form name="slidecontrols">
+							<textarea name="caption" rows="2" cols="50">Really cool kid</textarea>
+							<br><br>
+							<input type="button" name="Previous Slide" value="Previous Slide">
+							<input type="button" name="Next Slide" value="Next Slide">
+							<br><br>
+							Slide: <span id="currentslide">1</span>
+						</form>
+					</div>
+					<hr>
+					<p>4. Animated Banner</p>
+					<a href="day6AnimatedBanner.html">Click Here</a>
+				</div>
+			</div>
+			<br>
+			<button id="css-toggle">Toggle CSS</button>
+			<button id="nightmode-toggle">Toggle Nightmode</button>
+		</div>
+		<script type="text/javascript" src="script.js"></script>
+		<script type="text/javascript" src="day6script.js"></script>
+	</body>
+</html>
