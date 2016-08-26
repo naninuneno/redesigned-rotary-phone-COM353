@@ -32,7 +32,7 @@
 							<p>Additional resources:</p>
 						</u>
 					</b>
-					<p><a href="http://marijnhaverbeke.nl/js-cheatsheet.html">This Javascript cheatsheet</a> is a good way of quickly checking syntax when something has slipped your mind</p>
+					<p><a href="http://marijnhaverbeke.nl/js-cheatsheet.html" target="_blank">This Javascript cheatsheet</a> is a good way of quickly checking syntax when something has slipped your mind</p>
 				</div>
 				<br>
 				<div class="log-section">
@@ -112,7 +112,9 @@
 					<hr>
 					<p>6. Functions and External JS Files:<p>
 					<form id="7ex6-form">
-						Enter name: <input type="text">
+						<label for="7ex6-name">Enter name:</label>
+						<input id="7ex6-name" type="text">
+						<br>
 						<select>
 							<option disabled selected hidden>Uni</option>
 							<option>Queen's University</option>	
@@ -132,7 +134,8 @@
 							<option>Interactive Multimedia Design</option>
 							<option>Information Communication Technology</option>
 						</select>
-						<input type="submit">
+						<br>
+						<input class="submit" type="submit">
 					</form>
 					<p id="7ex6-output"></p>
 				</div>
@@ -145,9 +148,10 @@
 					</b>
 					<p>1. Looping:</p>
 					<form id="8ex1-form">
-						Count up to: <input type="text">
+						<label for="8ex1-count">Count up to:</label>
+						<input id="8ex1-count" type="text">
 						<br><br>
-						<input type="submit" value="Start Counting">
+						<input class="submit" type="submit" value="Start Counting">
 					</form>
 					<p id="8ex1-output"></p>
 					<hr>
@@ -159,22 +163,25 @@
 					<ul>
 					<li>1. See practical 7 exercise 6</li>
 					<li>2. Checking grades:
-						<br><br>
-						<form id="8ex3-form">
-						Mark 1: <input type="text">
-						<span id="mark1-validation" class="form-validation"></span><br>
-						Mark 2: <input type="text">
-						<span id="mark2-validation" class="form-validation"></span><br>
-						Mark 3: <input type="text">
-						<span id="mark3-validation" class="form-validation"></span><br>
-						Mark 4: <input type="text">
-						<span id="mark4-validation" class="form-validation"></span><br>
-						<br>
-						<input type="submit" value="Calculate Average">
-						<p id="8ex3-output"></p>
-					</form>
 					</li>
 					</ul>
+					<form id="8ex3-form">
+						<label for="mark1-validation">Mark 1:</label>
+						<input type="text">
+						<span id="mark1-validation" class="form-validation"></span><br>
+						<label for="mark2-validation">Mark 2:</label>
+						<input type="text">
+						<span id="mark2-validation" class="form-validation"></span><br>
+						<label for="mark3-validation">Mark 3:</label>
+						<input type="text">
+						<span id="mark3-validation" class="form-validation"></span><br>
+						<label for="mark4-validation">Mark 4:</label>
+						<input type="text">
+						<span id="mark4-validation" class="form-validation"></span><br>
+						<br>
+						<input class="submit" type="submit" value="Calculate Avg.">
+						<p id="8ex3-output"></p>
+					</form>
 				</div>
 			</div>
 			<br>

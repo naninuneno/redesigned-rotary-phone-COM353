@@ -55,14 +55,11 @@ body {
   background-color: #e4e7e4;
   border-radius: 10px;
   overflow: hidden;
+  overflow-x: auto;
 }
 
 .log-section.alternate {
   background-color: #d7dbd7;
-}
-
-.log-section.scroll {
-  overflow-x: scroll;
 }
 
 .left-right-wrapper {
@@ -102,18 +99,23 @@ ol {
 form {
   padding: 10px 10px 10px 10px;
   background-color: #c0c6c1;
+  text-align: center;
 }
 
-form input, form textarea {
-  width: 100%;
+form input, form select {
+  width: 25%;
+}
+
+form label {
+  display: block;
 }
 
 form textarea {
   height: 100px;
 }
 
-form input#submit {
-  width: 100px;
+form textarea, form input.submit {
+  width: 50%;
 }
 
 img#photo {
@@ -169,4 +171,22 @@ img#css-proof {
 #slideshow-img {
   height: 200px;
   width: 50%;
+}
+
+@media(max-width: 550px) {
+  form input, form select, form textarea {
+    width: 75%;
+  }
+
+  form input.submit {
+    width: 100%;
+  }
+
+  .block {
+    overflow: auto;
+  }
+
+  .block-link {
+    width: 20%;
+  }
 }

@@ -31,7 +31,7 @@
 							<p>Additional resources:</p>
 						</u>
 					</b>
-					<p><a href="http://htmldog.com/guides/javascript/advanced/">This advanced tutorial</a> is a good introduction to more advanced Javascript, covering OO, local storage, closures and some popular JS frameworks</p>
+					<p><a href="http://htmldog.com/guides/javascript/advanced/" target="_blank">This advanced tutorial</a> is a good introduction to more advanced Javascript, covering OO, local storage, closures and some popular JS frameworks</p>
 				</div>
 				<br>
 				<div class="log-section">
@@ -54,15 +54,20 @@
 					</b>
 					<p>1. Car Insurance Web Page:</p>
 					<form id="9ex1-form">
-						Forename: <input type="text">
+						<label for="fname-validation">Forename:</label>
+						<input type="text">
 						<span id="fname-validation" class="form-validation"></span><br>
-						Surname: <input type="text">
+						<label for="sname-validation">Surname:</label>
+						<input type="text">
 						<span id="sname-validation" class="form-validation"></span><br>
-						Age: <input type="text">
+						<label for="age-validation">Age:</label>
+						<input type="text">
 						<span id="age-validation" class="form-validation"></span><br>
-						Marital Status:
-						<input type="radio" name="marital-status" value="married"> Married<br>
-  						<input type="radio" name="marital-status" value="single"> Single<br>
+						<p>Marital Status:</p>
+						<label for="married">Married</label>
+						<input type="radio" id="married" name="marital-status" value="married"><br>
+						<label for="single">Single</label>
+  						<input type="radio" id="single" name="marital-status" value="single"><br>
 						<span id="married-validation" class="form-validation"></span><br>
 						<input type="submit" value="Calculate Insurance Class">
 					</form>
@@ -74,20 +79,28 @@
 					<b>User Information:</b>
 					<p>Please enter your details below:</p>
 					<form id="9ex3-form" name="userSurvey">
-						Name: (Required) <input type="text" name="userName">
+						<label for="survey-name">Name: (Required)</label>
+						<input id="survey-name" type="text" name="userName">
 						<span id="name-validation" class="form-validation"></span><br>
-						E-mail: (Required) <input type="text" name="email">
+						<label for="survey-email">Email: (Required)</label>
+						<input id="survey-email" type="text" name="email">
 						<span id="email-validation" class="form-validation"></span><br>
-						Phone: (Required) <input type="text" name="phone">
+						<label for="survey-phone">Phone: (Required)</label>
+						<input id="survey-phone" type="text" name="phone">
 						<span id="phone-validation" class="form-validation"></span><br>
 						<hr>
 						Please choose your favourite types of books (check all that apply):
-						<input type="checkbox" name="bookChoice0" value="Science Fiction"> Science Fiction
-  						<input type="checkbox" name="bookChoice1" value="Travel Guide"> Travel Guide
-  						<input type="checkbox" name="bookChoice2" value="Short Story Collection"> Short Story Collection
-  						<input type="checkbox" name="bookChoice3" value="Other"> Other<br>
+						<label for="book-scifi">Science Fiction</label>
+						<input id="book-scifi" type="checkbox" name="bookChoice0" value="Science Fiction">
+						<label for="book-travel">Travel Guide</label>
+  						<input id="book-travel" type="checkbox" name="bookChoice1" value="Travel Guide">
+  						<label for="book-shortstory">Short Story Collection</label>
+  						<input id="book-shortstory" type="checkbox" name="bookChoice2" value="Short Story Collection">
+  						<label for="book-other">Other</label>
+  						<input id="book-other" type="checkbox" name="bookChoice3" value="Other"><br>
 						<span id="book-validation" class="form-validation"></span><br>
 						<textarea form="9ex3-form" rows="4" cols="50" name="textarea"></textarea>
+						<br>
 						<input type="submit" value="Submit">
 						<button type="button">Reset Form</button>
 					</form>

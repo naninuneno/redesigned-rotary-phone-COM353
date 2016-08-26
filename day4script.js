@@ -99,22 +99,39 @@ practical8ex3form.onsubmit = function(e) {
 	var avg = (mark1 + mark2 + mark3 + mark4) / 4;
 	var grade;
 	var remark;
+
 	if (avg >= 90) {
 		grade = "an A";
-		remark = "Outstanding!";
 	} else if (avg >= 80) {
 		grade = "a B";
-		remark = "Very good!";
 	} else if (avg >= 70) {
 		grade = "a C";
-		remark = "Fairly good!";
 	} else if (avg >= 60) {
 		grade = "a D";
-		remark = "Doing okay!";
 	} else {
 		grade = "an E"
-		remark = "Need to work much harder!";
 	}
+
+	switch (grade) {
+		case "an A":
+			remark = "Outstanding!";
+			break;
+		case "a B":
+			remark = "Very good!";
+			break;
+		case "a C":
+			remark = "Fairly good!";
+			break;
+		case "a D":
+			remark = "Doing okay!";
+			break;
+		case "an E":
+			remark = "Need to work much harder!";
+			break;
+		default:
+			remark = "Something broke!"
+	}
+
 	var text = "You got " + grade;
 	if (grade == "E") {
 		text += ", failed";
